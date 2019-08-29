@@ -1,0 +1,11 @@
+.idea/
+*.iml
+*.jar
+target
+.settings/
+.classpath
+.project
+bin/
+target/
+.DS_Store
+__MACOSX/
