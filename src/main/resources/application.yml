@@ -1,0 +1,19 @@
+
+#port config
+server:
+  port: 8005
+#appilication base info config
+spring:
+  application:
+    name: server-eureka
+#eurake config self not to register to eureka server
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+  client:
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
